@@ -1,4 +1,4 @@
-package com.hamster.wheel;
+package com.hamster.wheel.game.of.life;
 
 /**
  * Created by Jason on 6/21/2015.

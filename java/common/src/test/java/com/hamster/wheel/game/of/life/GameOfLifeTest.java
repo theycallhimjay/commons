@@ -1,7 +1,7 @@
-package com.hamster.wheel;
+package com.hamster.wheel.game.of.life;
 
+import com.hamster.wheel.game.of.life.GameOfLife;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

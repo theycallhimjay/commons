@@ -1,4 +1,4 @@
-package com.hamster.wheel;
+package com.hamster.wheel.game.of.life;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
