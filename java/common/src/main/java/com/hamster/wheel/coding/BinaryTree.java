@@ -1,7 +1,9 @@
 package com.hamster.wheel.coding;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by jason on 4/24/2016.
@@ -9,22 +11,17 @@ import java.util.List;
 public class BinaryTree {
 
     public int solution(Tree t){
-        List<List<Integer>> paths = traverseTree(t);
-        for(List<Integer> path: paths){
-            System.out.println(path);
-        }
-        System.out.println(paths);
-        return 1;
+        Set<List<Integer>> paths = traverseTree(t);
+        return paths.size();
     }
 
-    private List<List<Integer>> traverseTree(Tree t){
-        List<List<Integer>> paths = new ArrayList<List<Integer>>();
+    private Set<List<Integer>> traverseTree(Tree t){
+        Set<List<Integer>> paths = new HashSet<List<Integer>>();
         traverse(t, paths, new ArrayList<Integer>());
         return(paths);
     }
 
-    private void traverse(Tree t, List<List<Integer>> paths,List<Integer> path) {
-
+    private void traverse(Tree t, Set<List<Integer>> paths,List<Integer> path) {
         if(t==null){
             return;
         }

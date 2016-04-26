@@ -6,6 +6,7 @@ package com.hamster.wheel.coding;
 public class Tree {
 
     public int x;
+    public char label = '0';
     public Tree l;
     public Tree r;
 
